@@ -17,7 +17,7 @@
 
     <!-- Jumbotron with Title -->
     <div class="jumbotron">
-      <h1 class="text-center"><strong>New York Times Search</strong></h1>
+      <h1 class="text-center"><span class="glyphicon glyphicon-paperclip"></span><strong>New York Times Search</strong></h1>
     </div>
 
     
@@ -35,14 +35,14 @@
       <div class="panel-body">
             
 		<form action="">
-		Search Term: <br><input type="text" name="searchTerm" value=""><br><br>
-		Number of Records to Retrieve: <br><input type="text" name="LastName" value=""><br><br>
-		Start Year (Optional): <br><input type="text" name="startYear" value=""><br><br>
-		End Year (Optional): <br><input type="datetime" name="endYear" value=""><br><br>
+		Search Term: <br><input id="search-term" type="text" value=""><br><br>
+		Number of Records to Retrieve: <br><input id="records" type="text" value=""><br><br>
+		Start Year (Optional): <br><input  id="start-year" type="text" value=""><br><br>
+		End Year (Optional): <br><input id="end-year" type="text" value=""><br><br>
 
 
-		<input type="submit" value="Search">
-		<input type="submit" value="Clear">
+		<input id="search-btn" type="submit" value="Search">
+		<input id="clear-btn" type="submit" value="Clear">
 		</form>
 		
 		</div>
@@ -51,22 +51,16 @@
   </div>
 </div>
 
+<!-- <form id="ContactForm">
+    Your Name: <input type="text" name="name" value="" /><br /> 
+    Your Email: <input type="text" name="email" value="" /><br /> 
+    Your Message:<br /> <textarea style="width: 200px; height: 100px;" name="message"></textarea> 
+    <br /><br /> 
+    <input type="submit" name="submit" value="Submit" /><br />
+    <div class="form_result"> </div>
+</form> -->
 
-        <!-- Controls (Superpower Visibility) -->
-        <!-- <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Superpowers - Invisiblity!</h3>
-          </div>
-          <div class="panel-body">
-            <div class="text-center">
-              <button class="btn btn-default btn-lg visButton"><span class="glyphicon glyphicon-eye-open"></span> Visible</button>
-              <button class="btn btn-info btn-lg invisButton"><span class="glyphicon glyphicon-eye-close"></span> Invisible</button>
-            </div>
-          </div>
-        </div>
-        </div> -->
-
-
+        
 
 
 
@@ -92,6 +86,7 @@
 // }).fail(function(err) {
 //   throw err;
 // });
+
 
 
 
